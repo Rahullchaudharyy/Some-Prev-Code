@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="first">
+            <div id="navbar">
+                <div id="nav-pt-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <div id="nav-pt-2">
+                    <h4>About</h4>
+                    <h4>Work</h4>
+                </div>
+                <div id="nav-pt-3">
+                    <i class="ri-twitter-fill"></i>
+                </div>
+            </div>
+            <div id="content">
+                  <div id="intro">
+
+                      <h1>Hello,</h1>
+                      <h3>Oh.You need a little dummy text <br> for your mockup ? How quaint.</h3>
+                      <h4>Read</h4>
+                  </div>
+
+            </div>
+        </div>
+
+
+        <div id="second">
+              <div id="second-pt-2">
+                <div id="left"></div>
+                <div id="right"></div>
+              </div>
+              <div id="bottom">
+
+              </div>            
+        </div>
+
+
+
+
+    </div>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.content {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Move it down a bit */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-color: black; */
+}
+#first{
+    height: 664.9px;
+    width: 45%;
+}
+#navbar{
+    font-size: 20px;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-pt-2{
+    display: flex;
+    gap: 17px;
+}
+#nav-pt-3{
+    padding-right: 54px;
+}
+#content{
+display: flex;
+width: 100%;
+justify-content: center;
+margin-top: 148px;
+}
+#second{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+}
+#second-pt-2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+
+}
+#left{
+    height: 100%;
+    width: 55%;
+    background-color: aquamarine;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#right{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#bottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#intro h1{
+    font-size: 80px;
+    line-height: 132px;
+    color: rgb(19, 19, 19);
+}
+#intro h3{
+    line-height: 23px;
+    color: rgb(30, 30, 30);
+}
+#intro h4{
+    line-height: 77px;
+    color: rgb(23, 23, 23);
+    /* text-decoration: underline; */
+    border-bottom: 2px solid rgb(31, 31, 31);
+    padding-bottom:5px ;
+    width: 32px;
+    height: 58px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 500px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #first {
+        width: 100%;
+    }
+    #main #right {
+        width: 100%;
+    }
+    #intro{
+        margin-top: -84px;
+    }
+}
+    </style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.content').style.opacity = '1';
+  });
+</script>
+</body>
+
+</html>

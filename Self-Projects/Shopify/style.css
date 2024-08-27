@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, #E674F9, #80DAFF);
+
+}
+
+#nav-bar{
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(92, 92, 92);
+    margin-top: 2px;
+}
+#nav-pt1{
+display: flex;
+justify-content: space-evenly;
+gap: 28px;
+margin-bottom: -40px;
+}
+#nav-pt1 img {
+    height:180px;
+     margin-top: -35px;
+     margin-left: 26px;
+}
+#nav-pt1 h3{
+    margin-top: 38px;
+  font-size: 28px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#nav-pt2{
+    margin-top: -7px;
+
+}
+#nav-pt2 button{
+    font-size: 25px;
+    margin-right: 55px;
+    
+}
+#nav-pt2 :nth-child(1){
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+#nav-pt2 :nth-child(2){
+    font-size: 25px;
+    margin-right: 77px;
+   background-color: black;
+    border: 2px solid #00000000;
+    color: rgb(255, 255, 255);
+    border-radius: 39px;
+    padding: 12px 28px 12px 28px;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+}
+#btn:hover {
+    color: #E674F9; 
+    border-color: #E674F9; 
+    box-shadow: 0 0 10px rgba(230, 116, 249, 0.5); 
+}
+#down-nav{
+    display: flex;
+    justify-content:space-evenly ;
+    font-size: 16px;
+    gap: 1px;
+    padding-right: 958px;
+    padding-left:-12px;
+    margin-left: -18px;
+    padding-top: 25px;
+    border-bottom: 2px solid  rgb(92, 92, 92);
+    padding-bottom: 26px;
+    font-weight: 500;
+   
+}
+#down-nav h3{
+    font-weight: 600;
+}
+#part1{
+    width: 50%;
+    height: 100%;
+    padding: 95px;
+    padding-top: 155px;
+}
+#div-1{
+    font-size: 15px;
+}
+#div-2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#div-3{
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+#div-4{
+    display: flex;
+
+}
+#div-4 :nth-child(2){
+    height: 75px;
+    width: 300px;
+    border-radius: 40px ;
+    font-size: 15px;
+    margin-right: 77px;
+   background-color: black;
+    border: 2px solid #00000000;
+    color: rgb(255, 255, 255);
+    border-radius: 39px;
+    padding: 12px 28px 12px 28px;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+}
+
+#div-4 input{
+    /* font-size: 55px; */
+    height: 75px;
+    width: 600px;
+    border-radius: 40px ;
+ 
+
+}
+#div-5{
+ font-weight: 100;
+ padding-top: 20px;
+}
+#part2 img{
+    height: 625px;
+    padding-top: 80px;
+    
+
+}
+
+#Content{
+    display: flex;
+}
+#part2{
+    width: 50%;
+}
+
+.ri-arrow-down-s-line{
+    
+    background-color: none;
+    color:none;
+    border-radius: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.clicked{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: rotate(180deg);
+    margin-left: 10px;  
+}
+
+#div-4 {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+}
+#myInput {
+    padding-right: 80px; /* Adjust padding to accommodate the button */
+    width: 100%;
+    font-size: 30px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+#btn2 {
+    position: absolute;
+    top: 0;
+    right: -238% ;
+    height: 100%;
+    border: none;
+    background: transparent;
+ size: 20px;
+}
+.TEXTS{
+    cursor: pointer;
+    /* background-color: black; */
+}
+.txt-clicked{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+}
+    
